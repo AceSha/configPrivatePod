@@ -14,5 +14,14 @@ Pod::Spec.new do |s|
   s.resources  = "__ProjectName__/__ProjectName__/**/*.{storyboard,xib}", "__ProjectName__/Assets.xcassets"
 
   # s.resources = "Resources/*.png"
+  # Architecture
+  s.dependency 'ReactorKit'
+  # Rx
+  s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
+  s.dependency 'RxOptional'
+  # Misc
+  s.dependency 'URLNavigator'
+  s.dependency 'Swinject'
 
 end
