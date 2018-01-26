@@ -8,7 +8,7 @@ repoName=""
 confirmed="n"
 
 getVersion() {
-    read -p "请输入版本号: " version
+    read -p "Enter Version: " version
 
     if test -z "$version"; then
         getVersion
@@ -16,7 +16,7 @@ getVersion() {
 }
 
 getRepoName() {
-    read -p "请输入仓库名: " repoName
+    read -p "Enter Repo Name: " repoName
 
     if test -z "$repoName"; then
         getRepoName
@@ -39,7 +39,7 @@ do
 if [ "$confirmed" == "n" -o "$confirmed" == "N" ]; then
 getInfomation
 fi
-read -p "确定? (y/n):" confirmed
+read -p "Confirm? (y/n):" confirmed
 done
 
 git add .
